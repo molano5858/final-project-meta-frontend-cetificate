@@ -1,13 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-3: #edefee;
+  --secondary-color-4: #333333;
+  --white: #ffffff;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
+}
+.nav-logo {
+  width: 120px;
+  margin-left: 32px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+.nav-listItem {
+  list-style-type: none;
+  margin: 0 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: var(--secondary-color-4);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--primary-color-1);
+  text-decoration: underline solid var(--primary-color-2);
+}
+
+.main-heroSection {
+  height: 80vh;
+  background-color: var(--primary-color-1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-heroSection-container-left {
+  margin-left: 80px;
+  width: 60%;
+}
+
+.main-heroSection-title {
+  font-family: var(--primary-font);
+  font-size: 64px;
+  color: var(--primary-color-2);
+  margin: 0;
+}
+
+.main-heroSection-subtitle {
+  font-size: 32px;
+  margin: 0;
+  color: var(--secondary-color-3);
+}
+
+.main-heroSection-description {
+  color: var(--secondary-color-3);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.main-heroSection-button {
+  border-radius: 16px;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color-4);
+  background-color: var(--primary-color-2);
+  padding: 16px 32px;
+  border: none;
+}
+
+.main-heroSection-container-right {
+  margin-right: 80px;
+  margin-left: 64px;
+  width: 40%;
+}
+
+.main-heroSection-image {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  max-width: 600px;
+  border-radius: 16px;
 }
