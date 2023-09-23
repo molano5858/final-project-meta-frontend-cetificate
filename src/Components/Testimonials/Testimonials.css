@@ -1,0 +1,82 @@
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-3: #edefee;
+  --secondary-color-4: #333333;
+  --white: #ffffff;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
+}
+
+.testimonials {
+  background-color: var(--primary-color-1);
+  padding: 32px;
+}
+
+.testimonials-title {
+  font-family: "Karla", sans-serif;
+  font-size: 2.5rem;
+  color: var(--secondary-color-3);
+  text-align: center;
+  margin: 32px;
+}
+
+.testimonials-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 32px;
+  gap: 16px;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 325px;
+  margin-top: 32px;
+  padding: 16px;
+}
+
+.testimonial-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 16px 0;
+}
+.testimonials-text {
+  margin: 16px 32px;
+  font-size: 1.25rem;
+  font-family: var(--secondary-font);
+}
+
+.testimonial-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.testimonial-name-position-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonials-name {
+  font-weight: bold;
+  font-size: 1.55rem;
+}
+
+.testimonials-position {
+  font-size: 1.25rem;
+}

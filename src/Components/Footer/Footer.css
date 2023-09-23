@@ -1,0 +1,66 @@
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-3: #edefee;
+  --secondary-color-4: #333333;
+  --white: #ffffff;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.container-left,
+.container-centerLeft,
+.container-centerRight,
+.container-right {
+  min-width: 300px;
+  max-width: 280px;
+  min-height: 268px;
+  background-color: var(--white);
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+footer li {
+  text-decoration: none;
+  margin: 8px;
+  font-weight: 500;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary-color-2);
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: var(--primary-color-1);
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container-left {
+    min-height: 100px;
+  }
+}

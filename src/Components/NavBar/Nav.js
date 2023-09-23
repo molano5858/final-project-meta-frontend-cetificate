@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logo from "../Assets/Images/logo Lemon yellow horizontal.png";
+import logo from "../../Assets/Images/logo Lemon yellow horizontal.png";
+import "./Nav.css";
 
 function Nav() {
   const [mostarBurguerMenu, setMostrarBurguerMenu] = useState(false);
@@ -13,7 +14,7 @@ function Nav() {
       <nav className="nav-bar">
         <div
           className={`burger-menu ${
-            !mostarBurguerMenu ? "showBurguerMenu" : "hideBurguerMenu"
+            mostarBurguerMenu ? "showBurguerMenu" : "hideBurguerMenu"
           }`}
           id="burger-menu"
         >
@@ -73,14 +74,12 @@ function Nav() {
         <div onClick={handlerIcon} className={`icons `} id="icons">
           <i
             className={`bx bx-menu ${
-              mostarBurguerMenu ? "showIcon" : "hideIcon"
+              !mostarBurguerMenu ? "showIcon" : "hideIcon"
             }`}
             id="menuIcon"
           ></i>
           <i
-            className={`bx bx-x ${
-              !mostarBurguerMenu ? "showIcon" : "hideIcon"
-            }`}
+            className={`bx bx-x ${mostarBurguerMenu ? "showIcon" : "hideIcon"}`}
             id="menuX"
           ></i>
         </div>

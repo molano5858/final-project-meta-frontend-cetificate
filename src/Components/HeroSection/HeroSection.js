@@ -1,6 +1,7 @@
 import React from "react";
+import "./HeroSection.css";
 
-function Main() {
+function HeroSection() {
   return (
     <>
       <section className="main-heroSection">
@@ -22,18 +23,8 @@ function Main() {
           />
         </div>
       </section>
-      <section>
-        <h3>Hightlights</h3>
-      </section>
-      <section>
-        <h3>Testimonials</h3>
-      </section>
-      <section>
-        <h3>About</h3>
-      </section>
-      <p>Main</p>
     </>
   );
 }
 
-export { Main };
+export { HeroSection };

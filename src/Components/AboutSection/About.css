@@ -1,0 +1,110 @@
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-3: #edefee;
+  --secondary-color-4: #333333;
+  --white: #ffffff;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
+}
+/* Inicio about section */
+
+.main-aboutSection {
+  background-color: var(--secondary-color-3);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
+}
+
+.main-aboutSection-container-left {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-aboutSection-title {
+  font-family: var(--primary-font);
+  font-size: 64px;
+  color: var(--primary-color-2);
+  margin: 0;
+}
+
+.main-aboutSection-subtitle {
+  font-size: 32px;
+  margin: 0;
+  color: var(--primary-color-1);
+}
+
+.main-aboutSection-description {
+  color: var(--primary-color-1);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.main-aboutSection-container-right {
+  margin-right: 80px;
+  margin-left: 64px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+  position: relative;
+}
+
+.main-aboutSection-button {
+  border-radius: 16px;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color-4);
+  background-color: var(--primary-color-2);
+  padding: 16px 32px;
+  border: none;
+}
+
+.main-aboutSection-image.image1 {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 8px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: all 400ms ease-in;
+}
+.main-aboutSection-image.image2 {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 8px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: all 400ms ease-in;
+}
+
+.main-aboutSection-image.image2:hover,
+.main-aboutSection-image.image1:hover {
+  width: 80%;
+  height: 80%;
+  transition: all 400ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .main-aboutSection-container-left,
+  .main-aboutSection-container-right {
+    width: 100%;
+  }
+}
+/* Fin about section */
