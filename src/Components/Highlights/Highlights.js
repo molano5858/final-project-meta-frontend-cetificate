@@ -1,5 +1,6 @@
 import React from "react";
 import "./Highlights.css";
+import { Link } from "react-router-dom";
 
 function Highlights() {
   return (
@@ -7,7 +8,9 @@ function Highlights() {
       <section className="highlight">
         <div className="highlight-header">
           <h1 className="highlight-title">Specials</h1>
-          <button className="highlight-button">Online Menu</button>
+          <button className="highlight-button">
+            <Link to="/menu">Online Menu</Link>
+          </button>
         </div>
         <div className="highlight-cards-container">
           <div className="card">

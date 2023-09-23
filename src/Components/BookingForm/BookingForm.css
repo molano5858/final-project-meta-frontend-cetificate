@@ -1,0 +1,76 @@
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-3: #edefee;
+  --secondary-color-4: #333333;
+  --white: #ffffff;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
+}
+.form-container {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color-1);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 32px auto;
+}
+
+.form-title {
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: var(--primary-color-2);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+#booking-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+label {
+  color: var(--white);
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+input,
+select {
+  border-radius: 8px;
+  min-height: 24px;
+  padding: 8px;
+  border: none;
+}
+
+.submit-button {
+  border-radius: 16px;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color-4);
+  background-color: var(--primary-color-2);
+  padding: 16px 32px;
+  border: none;
+  margin: 32px 0;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}

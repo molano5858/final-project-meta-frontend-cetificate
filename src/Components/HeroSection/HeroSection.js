@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -13,7 +14,9 @@ function HeroSection() {
             rhoncus convallis risus, ut ultricies risus congue nec. Ut eleifend
             accumsan nibh tincidunt finibus. Nullam gravida dapibus accumsan.
           </p>
-          <button className="main-heroSection-button">Reservar una mesa</button>
+          <button className="main-heroSection-button">
+            <Link to={"/reservar"}>Reservar una mesa</Link>
+          </button>
         </div>
         <div className="main-heroSection-container-right">
           <img

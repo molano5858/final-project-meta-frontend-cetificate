@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Assets/Images/logo Lemon yellow horizontal.png";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,20 +14,26 @@ function Footer() {
           <ul>
             <h4 className="footer-title">Doormat Navigation</h4>
             <li className="footer-link">
-              <a href="/about">About Us</a>
+              <a href="/about">
+                <Link to="/aboutus">About Us</Link>
+              </a>
             </li>
             <li className="footer-link">
-              <a href="/menu">Menú</a>
+              <a href="/menu">
+                <Link to="/menu">Menú</Link>
+              </a>
             </li>
             <li className="footer-link">
-              <a href="/reservas">Reservas</a>
+              <a href="/reservas">
+                <Link to="/reservar">Reservas</Link>
+              </a>
             </li>
-            <li className="footer-link">
+            {/* <li className="footer-link">
               <a href="/blog">Pedidos en linea</a>
             </li>
             <li className="footer-link">
               <a href="/login">Log In</a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="container-centerRight">
