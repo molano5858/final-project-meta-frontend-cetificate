@@ -1,8 +1,9 @@
 import "./AboutUs.css";
+import { About } from "../AboutSection/About";
 import React from "react";
 
 function AboutUs() {
-  return <h1>About Us Page</h1>;
+  return <About />;
 }
 
 export { AboutUs };

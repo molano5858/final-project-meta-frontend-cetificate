@@ -15,7 +15,7 @@ a {
   color: inherit;
 }
 
-.container {
+.container-footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,7 +28,7 @@ a {
 .container-centerLeft,
 .container-centerRight,
 .container-right {
-  min-width: 300px;
+  min-width: 200px;
   max-width: 280px;
   min-height: 268px;
   background-color: var(--white);
@@ -59,8 +59,21 @@ footer li {
   list-style: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .container-left {
     min-height: 100px;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .container-left,
+  .container-centerLeft,
+  .container-centerRight,
+  .container-right {
+    width: 248px;
+    max-width: 280px;
+    min-height: 180px;
   }
 }

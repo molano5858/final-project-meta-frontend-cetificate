@@ -1,0 +1,49 @@
+:root {
+  --primary-color-1: #495e57;
+  --primary-color-2: #f4ce14;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-3: #edefee;
+  --secondary-color-4: #333333;
+  --white: #ffffff;
+  --primary-font: "Markazi Text", serif;
+  --secondary-font: "Karla", sans-serif;
+}
+
+.container-menu-construccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+  margin: 32px;
+}
+
+h2 {
+  color: var(--primary-color-2);
+}
+
+h3 {
+  color: var(--primary-color-1);
+  margin: 16px;
+}
+
+.image-menu-section {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.menu-button {
+  border-radius: 16px;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color-4);
+  background-color: var(--primary-color-2);
+  padding: 16px 32px;
+  border: none;
+}
